@@ -48,12 +48,13 @@ export default function Cart(props) {
         {console.log(props.cart)}
         {props.cart.map(itemInCart => {
           return (
-          
+          (newState.subtotal= newState.subtotal + itemInCart.price),
+          (cartItems.subtotal=newState.subtotal),
             (
               <div style={itemInCartStyle} key={itemInCart.id}>
                 
-                {(newState.subtotal= newState.subtotal + itemInCart.price)}
-                {cartItems.subtotal=newState.subtotal}
+                
+                
                 {console.log(cartItems.subtotal)}
                 <div>{itemInCart.name}</div>
                 <div id={itemInCart.id} onClick={_handleClick}>
