@@ -28,8 +28,8 @@ export default function ItemsContainer() {
     console.log(id)
     const newCart = cart.filter(function(id, i) {
       console.log(id.id);
-      console.log(cart[i].id)
-      return cart[i].id !== id.id
+      console.log(cart[i])
+      return cart[0].id !== id.id
     })
 console.log(newCart)
     setCart(newCart);
